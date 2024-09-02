@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Book Taking Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h2>Library Book Taking Registration</h2>
+    <form id="registrationForm">
+        <!-- Basic Information -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <div class="error" id="nameError"></div>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <div class="error" id="emailError"></div>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required>
+        <div class="error" id="phoneError"></div>
+
+        <label for="studentId">Student ID:</label>
+        <input type="text" id="studentId" name="studentId" required>
+        <div class="error" id="studentIdError"></div>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <div class="error" id="dobError"></div>
+
+        <!-- Gender Selection -->
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <div class="error" id="genderError"></div>
+
+        <!-- Student Department -->
+        <label for="department">Department:</label>
+        <select id="department" name="department" required>
+            <option value="">Select Department</option>
+            <option value="cse">CSE</option>
+            <option value="ad">AD</option>
+            <option value="aiml">AIML</option>
+            <option value="it">IT</option>
+            <option value="ece">ECE</option>
+            <option value="eee">EEE</option>
+            <option value="civil">CIVIL</option>
+        </select>
+        <div class="error" id="departmentError"></div>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <div class="error" id="passwordError"></div>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <div class="error" id="confirmPasswordError"></div>
+
+        <!-- Book Type -->
+        <label for="bookType">Book Type:</label>
+        <select id="bookType" name="bookType" required>
+            <option value="">Select a type</option>
+            <option value="magazine">Magazine</option>
+            <option value="cooking">Cooking</option>
+            <option value="programming">Programming Languages</option>
+            <option value="fiction">Fiction</option>
+            <option value="nonfiction">Non-fiction</option>
+        </select>
+        <div class="error" id="bookTypeError"></div>
+
+        <!-- Programming Languages (Conditional) -->
+        <div id="programmingLanguages" style="display:none;">
+            <label for="programmingLanguage">Programming Languages:</label>
+            <select id="programmingLanguage" name="programmingLanguage">
+                <option value="">Select a language</option>
+                <option value="c">C</option>
+                <option value="cpp">C++</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="javascript">JavaScript</option>
+                <option value="php">PHP</option>
+                <option value="mongodb">MongoDB</option>
+                <option value="reactjs">React.js</option>
+            </select>
+            <div class="error" id="programmingLanguageError"></div>
+        </div>
+        
+                <!-- Book Names based on Book Type -->
+                <div id="bookNamesContainer" style="display: none;">
+                    <label for="bookNames">Book Names:</label>
+                    <select id="bookNames" name="bookNames">
+                        <!-- Options will be populated by JavaScript -->
+                    </select>
+                </div>
+        
+
+        <!-- Book Language -->
+        <label for="bookLanguage">Book Language:</label>
+        <select id="bookLanguage" name="bookLanguage" required>
+            <option value="">Select a language</option>
+            <option value="tamil">Tamil</option>
+            <option value="kannada">Kannada</option>
+            <option value="telugu">Telugu</option>
+            <option value="malayalam">Malayalam</option>
+            <option value="french">French</option>
+            <option value="spanish">Spanish</option>
+        </select>
+        <div class="error" id="languageError"></div>
+
+        <!-- Authors (Conditional) -->
+        <label for="author">Author's Name:</label>
+        <select id="author" name="author" required>
+            <option value="">Select an author</option>
+        </select>
+        <div class="error" id="authorError"></div>
+
+        <!-- Return Date -->
+    <label for="returnDate">Expected Return Date:</label>
+    <input type="date" id="returnDate" name="returnDate" required>
+    <div class="error" id="returnDateError"></div>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- Success message placeholder -->
+    <div id="successMessage" style="display: none;" class="success">Registration is successful!</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+

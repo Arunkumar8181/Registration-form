@@ -1,0 +1,67 @@
+/* Basic styles for form layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url('https://watermark.lovepik.com/photo/20211130/large/lovepik-library-background-picture_501201876.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensures the background covers the entire page */
+    background-position: center; /* Centers the background image */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-bottom: 30px;
+    color: hwb(0 0% 100%);
+}
+
+/* Form styling */
+form {
+    width: 450px; /* Increased width for better alignment */
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+input, select {
+    width: 90%; /* Adjusted width for better layout */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.success {
+    width: 450px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #dff0d8;
+    color: #3c763d;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
